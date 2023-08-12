@@ -7,12 +7,24 @@
     <title>Portfolio</title>
 
     <script src="code.jquery.com_jquery-3.7.0.js"></script>
+
+
+    
     <style>
         body {
             margin: 0px;
             height: 2200px;
         }
+        html {
+  scroll-behavior: smooth;
+ }
+ 
 
+ 
+ #down {
+  margin-top: 0%;
+  padding-bottom: 0%;
+ } 
         .main {
             background-color: black;
             height: 615px;
@@ -148,7 +160,7 @@
         .display{
             
             background-color: #1b0909;
-            height: 615px;
+            height: 715px;
             width: 100%;
 
         
@@ -209,10 +221,147 @@
             width: 450px;
             margin: 10px;
         }
+        /******************************************************/
+        /******************************************************/
+        /******************************************************/
+        @media (max-width: 420px) {
+            .main{
+            background-color: black;
+            height: 350px;
+            width: 158%;
+        }
+        .box1 {
+         
+            height: 25px;
+            width: 60px;
+            font-size: 35px;
+            
+        }
+        .nav2 {
+            height: 40px;
+            width: 500px;
+            position: absolute;
+            right: -300px;
+           
+        }
+
+        .nav {
+            background-color: transparent;
+            height: 25px;
+            width: 90px;
+            text-align: center;
+            float: left;
+            font-size: 15px;
+            color: white;
+
+        }
+        .image {
+            position: absolute;
+            top: 80px;
+            right: -200px;
+            height: 200px;
+            width: 200px;
+        }
+        .name1 {
+            background-color: transparent;
+            position: absolute;
+            top: 100px;
+            left: 30px;
+            height: 250px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .name2 {
+            background-color: transparent;
+            position: absolute;
+            top: 150px;
+            left: 60px;
+            height: 250px;
+            width: 750px;
+            font-size: 50px;
+            color: white;
+        }
+
+        .name3  {
+            background-color: transparent;
+            position: absolute;
+            top: 210px;
+            left: 100px;
+            height: 500px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+        /*----------------------------------------------*/
+        .work{
+            background-color: #1a1a1a;
+            height: 770px;
+            width: 158%;
+
+        }
+        .text1{
+            height: 75px;
+            width: 350px;
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 370px;
+            left: 55%;
+
+        }
+        .bcci{
+            height: 280px;
+            width: 280px;
+            background-color: rgb(34, 32, 35);
+            color: white;
+            font-size: 30px;
+            text-align: center;
+
+            
+        }
+        .work1{
+            position: absolute;
+            top: 450px;
+            left: 25px;
+        }
+        .work2{
+            position: absolute;
+            top: 450px;
+            left: 350px;
+        }
+        .work3{
+            position: absolute;
+            top: 800px;
+            left: 205px;
+        }
+        ul{
+            padding-top: 20px;
+            font-size: 25px;
+        
+        }
+        .display{
+            
+            background-color: #1b0909;
+            height: 715px;
+            width: 158%;
+
+        
+        }
+
+
+
+
+
+
+    }
     </style>
 </head>
 
 <body>
+   
+    
     <div class="main">
         <div class="box1">
             PORT<span class="yellow">FOLIO</span>
@@ -222,11 +371,11 @@
             <a href="">
                 <div class="nav nav1">Home</div>
             </a>
-            <a href="">
-                <div class="nav">Service</div>
+            <a href="#down">
+                <div class="nav">Experience</div>
             </a>
             <a href="aboutme.html">
-                <div class="nav ">About-Me</div>
+                <div class="nav ">&nbsp;&nbsp;About-Me</div>
             </a>
             <a href="">
                 <div class="nav">Contact</div>
@@ -239,14 +388,15 @@
         <div class="name2">Vaibhav Kothari</div>
         <div class="name3">and i am a <span class="red">student</span>
         </div>
-
+        
         <div class="image">
             <img src="WhatsApp Image 2023-07-20 at 5.21.33 PM.jpeg" alt="" height="100%" width="100%">
         </div>
-
+        
         
     </div>
     <div class="work">
+        <div id="down"></div>
         <div class="text1">Work Experience</div>
         <br>
         <div class="work1 bcci ">Video Editing
@@ -290,8 +440,8 @@
             <div class="project pro1 ">Video Editing</div>
             <div class="project pro2 ">Website</div>
             <div class="project pro3 ">Python</div>
-
-            <div class="proj1 dis1"></div>
+    </div>
+            <!-- <div class="proj1 dis1"></div>
             <div class="proj1 dis2"></div>
             <div class="proj1 dis3"></div>
             <div class="proj1 dis4"></div>
@@ -300,9 +450,29 @@
             <div class="proj1 dis7"></div>
             <div class="proj1 dis8"></div>
             <div class="proj1 dis9"></div>
-           
+            -->
         
-    </div>
+    
+<!-- Add this script tag after your existing code -->
+<script>
+    $(document).ready(function () {
+        // Select the "Service" link
+        const serviceLink = $(".nav2 .nav:nth-child(2)");
+
+        // Add a click event handler to the "Service" link
+        serviceLink.click(function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const serviceSection = $("#service"); // Get the service section
+            const scrollOffset = 800; // Scroll offset value in pixels
+            
+            // Scroll to the service section with a smooth animation
+            $("html, body").animate({
+                scrollTop: serviceSection.offset().top - scrollOffset
+            }, 1000); // 1000 milliseconds for animation duration
+        });
+    });
+</script>
 
 </body>
 
