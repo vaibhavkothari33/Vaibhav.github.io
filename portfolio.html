@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            height: 2200px;
+        }
+
+        .main {
+            background-color: black;
+            height: 615px;
+            width: 100%;
+        }
+
+        .box1 {
+            padding-top: 10px;
+            margin-left: 25px;
+            height: 60px;
+            width: 300px;
+            font-size: 45px;
+            color: white;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .nav2 {
+            height: 60px;
+            width: 900px;
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+
+        .nav {
+            background-color: transparent;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            float: left;
+            font-size: 35px;
+            color: white;
+
+        }
+
+        .nav1 {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .name1 {
+            background-color: transparent;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            height: 250px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .name2 {
+            background-color: transparent;
+            position: absolute;
+            top: 250px;
+            left: 80px;
+            height: 250px;
+            width: 750px;
+            font-size: 80px;
+            color: white;
+        }
+
+        .name3 {
+            background-color: transparent;
+            position: absolute;
+            top: 330px;
+            left: 300px;
+            height: 250px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .image {
+            position: absolute;
+            top: 140px;
+            right: 140px;
+            height: 400px;
+            width: 400px;
+        }
+        .work{
+            background-color: #1a1a1a;
+            height: 615px;
+            width: 100%;
+
+        }
+        .text1{
+            height: 75px;
+            width: 350px;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 630px;
+            left: 42%;
+
+        }
+        .bcci{
+            height: 320px;
+            width: 320px;
+            background-color: rgb(34, 32, 35);
+            color: white;
+            font-size: 37px;
+            text-align: center;
+
+            
+        }
+        .work1{
+            position: absolute;
+            top: 800px;
+            left: 65px;
+        }
+        .work2{
+            position: absolute;
+            top: 800px;
+            left: 525px;
+        }
+        .work3{
+            position: absolute;
+            top: 800px;
+            right: 65px;
+        }
+        ul{
+            padding-top: 20px;
+            font-size: 25px;
+        
+        }
+        .display{
+            
+            background-color: #1b0909;
+            height: 615px;
+            width: 100%;
+
+        
+        }
+        .text2{
+            height: 75px;
+            width: 350px;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 1240px;
+            left: 45%;
+
+        }
+        .projects{
+            height: 100px;
+            width: 100%;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 1200px;
+            left: 45px;
+            word-spacing: 100px;
+        }
+        .project{
+            height: 50px;
+            width: 300px;
+            float: left;
+           /*background-color: rgb(34, 32, 35);*/
+            color: white;
+            font-size: 45px;
+            text-align: center;
+
+            
+        }
+        .pro1{
+            position: absolute;
+            top: 1350px;
+            left:35px;
+        }
+        .pro2{
+            position: absolute;
+            top: 1350px;
+            left:525px;
+        }
+        .pro3{
+            position: absolute;
+            top: 1350px;
+            right:35px;
+        }
+        .proj1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            background-color: #1b0909a9;
+            height: 250px;
+            width: 450px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1">
+            PORT<span class="yellow">FOLIO</span>
+        </div>
+
+        <div class="nav2">
+            <a href="">
+                <div class="nav nav1">Home</div>
+            </a>
+            <a href="">
+                <div class="nav">Service</div>
+            </a>
+            <a href="aboutme.html">
+                <div class="nav ">About-Me</div>
+            </a>
+            <a href="">
+                <div class="nav">Contact</div>
+            </a>
+            <a href="loginform.html">
+                <div class="nav">Login</div>
+            </a>
+        </div>
+        <div class="name1"><span class="red">My</span> name is </div>
+        <div class="name2">Vaibhav Kothari</div>
+        <div class="name3">and i am a <span class="red">student</span>
+        </div>
+
+        <div class="image">
+            <img src="WhatsApp Image 2023-07-20 at 5.21.33 PM.jpeg" alt="" height="100%" width="100%">
+        </div>
+
+        
+    </div>
+    <div class="work">
+        <div class="text1">Work Experience</div>
+        <br>
+        <div class="work1 bcci ">Video Editing
+            <br><ul>
+            <li>50+ Video Edited</li>
+            <br>
+            <li>Video Editing</li>
+            <br>
+            <li>Reel Editing</li>
+            <br>
+            <li>Photo Editing</li>
+        </ul>
+        </div>
+       <div class="work2 bcci">Web Developer
+        <br><ul>
+            
+            <li>C/C++</li>
+            <br>            
+            <li>HTML 5</li>
+            <br>
+            <li>CSS 3</li>
+            <br>
+            <li>Java Script</li>
+        </ul>
+       </div>
+        <div class="work3 bcci">Python Developer
+            <br><ul>
+            
+                <li>Program Builder</li>
+                <br>            
+                <li>Data Analysist</li>
+                <br>
+                <li>Query Solver</li>
+                <br>
+                <li>CSV file manager</li>
+            </ul>
+        </div>
+    </div>
+    <div class="display">
+            <div class="text2">Projects</div>
+            <div class="project pro1 ">Video Editing</div>
+            <div class="project pro2 ">Website</div>
+            <div class="project pro3 ">Python</div>
+
+            <div class="proj1 dis1"></div>
+            <div class="proj1 dis2"></div>
+            <div class="proj1 dis3"></div>
+            <div class="proj1 dis4"></div>
+            <div class="proj1 dis5"></div>
+            <div class="proj1 dis6"></div>
+            <div class="proj1 dis7"></div>
+            <div class="proj1 dis8"></div>
+            <div class="proj1 dis9"></div>
+           
+        
+    </div>
+
+</body>
+
+</html>
