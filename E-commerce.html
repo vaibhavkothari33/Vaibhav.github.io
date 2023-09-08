@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <style>
+        body {
+            height: 2500px;
+            margin: 0px;
+            position: relative;
+
+        }
+
+        .nav {
+            background-color: black;
+            height: 25px;
+            width: 335px;
+            color: whitesmoke;
+            margin-left: 1px;
+            float: left;
+            text-align: center;
+            font-size: 17px;
+
+
+        }
+
+        #name {
+            margin-left: 50px;
+            height: 50px;
+            width: 280px;
+            border: 1px black solid;
+        }
+
+        .icon {
+            height: 50px;
+            width: 50px;
+
+            margin-right: 5px;
+            position: absolute;
+            top: 55px;
+            left: 350px;
+            cursor: pointer;
+        }
+
+        .logo {
+            height: 50px;
+            width: 500px;
+            position: absolute;
+            top: 55px;
+            left: 450px;
+            font-size: 65px;
+            text-align: center;
+
+
+        }
+
+        .share {
+            height: 50px;
+            width: 150px;
+            position: absolute;
+            top: 90px;
+            left: 1000px;
+            font-size: 25px;
+            text-align: center;
+
+
+
+        }
+
+
+        .share1 {
+            height: 30px;
+            width: 30px;
+
+            position: absolute;
+            top: 2px;
+            left: 150px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+
+
+        }
+
+        .share2 {
+            height: 30px;
+            width: 30px;
+
+            position: absolute;
+            top: 2px;
+            left: 200px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+
+
+        }
+
+        .share3 {
+            height: 30px;
+            width: 30px;
+
+            position: absolute;
+            top: 2px;
+            left: 250px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+
+
+        }
+
+        .share4 {
+            height: 30px;
+            width: 30px;
+
+            position: absolute;
+            top: 2px;
+            left: 300px;
+            font-size: 23px;
+            text-align: center;
+            cursor: pointer;
+
+
+        }
+
+        .main {
+            height: 80px;
+            width: 1350px;
+            background-color: black;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            float: left;
+            font-size: 20px;
+
+        }
+
+        .main1 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+
+        }
+
+        .main2 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .main3 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 300px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .main4 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 450px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .main5 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 620px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .main6 {
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            left: 770px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .main7 {
+            cursor: pointer;
+            position: absolute;
+            top: 125px;
+            left: 900px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: green;
+            font-size: 50px;
+            padding: 12px;
+
+        }
+
+        a {
+            color: white;
+        }
+
+        .image {
+            height: 500px;
+            width: 100%;
+
+        }
+
+        .image2 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: -10px;
+            left: 5px;
+        }
+
+        .image3 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 750px;
+            left: 440px;
+
+        }
+
+        .image9 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+
+            float: left;
+            position: absolute;
+            top: 750px;
+            left: 850px;
+
+        }
+
+        .image5 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 350px;
+            right: 600px;
+
+        }
+
+        .image6 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 1200px;
+            left: 440px;
+
+        }
+
+        .image7 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 1200px;
+            left: 850px;
+
+        }
+
+        .wom1 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: -15px;
+            left: 50px;
+
+        }
+
+        .wom2 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: -15px;
+            left: 450px;
+
+        }
+
+        .wom3 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: -15px;
+            left: 870px;
+
+        }
+
+        .wom4 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 365px;
+            left: 450px;
+
+        }
+
+        .wom5 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 365px;
+            left: 870px;
+
+        }
+
+        .wom6 {
+            height: 350px;
+            width: 200px;
+            margin: 100px;
+            word-spacing: 100px;
+            float: left;
+            position: absolute;
+            top: 365px;
+            left: 50px;
+
+        }
+
+
+        .bar {
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            position: absolute;
+            top: 700px;
+            color: white;
+        }
+
+        .image2 {
+
+            width: 300px;
+            /* Adjust the size as needed */
+            overflow: hidden;
+        }
+
+
+        .image2 {
+            width: 350px;
+            height: auto;
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Style for the overlay (initially hidden) */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 250px;
+            background-color: skyblue(0, 0, 0, 0.7);
+            /* Semi-transparent black overlay */
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Hover effect: Show overlay and scale image */
+        .image2:hover .overlay {
+            opacity: 1;
+            /* Show the overlay on hover */
+        }
+
+        .image2:hover img {
+            transform: scale(1.1);
+            /* Scale up the image on hover */
+        }
+
+
+        .image3 {
+            width: 350px;
+            height: auto;
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Style for the overlay (initially hidden) */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 250px;
+            background-color: skyblue(0, 0, 0, 0.7);
+            /* Semi-transparent black overlay */
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Hover effect: Show overlay and scale image */
+        .image3:hover .overlay {
+            opacity: 1;
+            /* Show the overlay on hover */
+        }
+
+        .image3:hover img {
+            transform: scale(1.1);
+            /* Scale up the image on hover */
+        }
+
+        .back {
+            height: 850px;
+            width: 100%;
+            position: relative;
+            top: 116px;
+            background-color: rgb(34, 32, 35);
+        }
+
+        .back2 {
+
+            height: 850px;
+            width: 100%;
+            position: absolute;
+            top: 1660px;
+            background-color: rgb(34, 32, 35);
+        }
+
+        .image5 {
+            width: 350px;
+            height: auto;
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Style for the overlay (initially hidden) */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 250px;
+            background-color: skyblue(0, 0, 0, 0.7);
+            /* Semi-transparent black overlay */
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        /* Hover effect: Show overlay and scale image */
+        .image5:hover .overlay {
+            opacity: 1;
+            /* Show the overlay on hover */
+        }
+
+        .image5:hover img {
+            transform: scale(1.1);
+            /* Scale up the image on hover */
+        }
+
+        .bar1 {
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            position: absolute;
+            top: 1600px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="nav">Sign In</div>
+        <div class="nav">Sign Up</div>
+        <div class="nav">Call:9680660153</div>
+        <div class="nav">&nbsp vaibhavkothari50@gmail.com </div>
+        <br><br><br>
+        <input type="text" id="name" placeholder="Search Here...">
+        <div class="icon"><img src="search.png" height="50px" width="50px"></div>
+        <div class="logo">Vaibhav Kothari</div>
+        <div class="share">Share on:
+            <div class="share1"><a href="https://www.linkedin.com/in/vaibhav-kothari-39549428a/" target="_blank"><img
+                        src="linkedin_logo.png" height="30px" width="30px"></a></div>
+            <div class="share2"> <a href="https://www.instagram.com/vaibhavkothari_33/" target="_blank"><img
+                        src="instagran_icon.png" height="30px" width="30px">
+
+                </a>
+            </div>
+
+            <div class="share3"><a href="#"><img src="mail_logo.png" height="30px" width="30px"></div>
+
+            <div class="share4"><a href="#" target="_blank"><img src="youtube_logo.png" height="30px" width="30px">
+            </div>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    <section>
+
+        <div class="main">
+
+
+            <a href="#down">
+                <div class="main3">Men's&nbspWear</div>
+            </a>
+
+            <div class="main4">Women's&nbspWear</div>
+            <div class="main5">Short&nbspCode</div>
+            <div class="main6">Contact</div>
+            <div class="main7"> Cart</div>
+        </div>
+    </section>
+    <div class="image">
+        <img src="shopping.webp" alt="" height="100%" width="100%">
+    </div>
+
+    <div id="down">
+        <div class="bar">
+            <h1>Men's Wear</h1>
+        </div>
+        <div class="back">
+            <div class="image2 rock">
+                <img src="shirt1.png" height="250px" width="300px">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="image3 rock">
+            <img src="shirt2.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="image9 rock">
+        <img src="shirt3.png" height="250px" width="300px">
+        <div class="overlay"></div>
+
+
+        <div class="image5 rock">
+            <img src="shirt2.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="image6 rock">
+        <img src="shirt3.png" height="250px" width="300px">
+        <div class="overlay"></div>
+    </div>
+    </div>
+    <div class="image7 rock">
+        <img src="shirt1.png" height="250px" width="300px">
+        <div class="overlay"></div>
+
+    </div>
+
+
+    <div id="down1">
+        <div class="bar1">
+            <h1>Women's Wear</h1>
+        </div>
+    </div>
+
+    <div class="back2">
+        <div class="img wom1">
+            <img src="women1.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="img wom2">
+            <img src="women2.png" height="250px" width="300px">
+            <div class="overlay"></div>
+
+        </div>
+        <div class="img wom3">
+            <img src="women3.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="img wom4">
+            <img src="women3.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="img wom5">
+            <img src="women1.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="img wom6">
+            <img src="women2.png" height="250px" width="300px">
+            <div class="overlay"></div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+
+    $(document).ready(function () {
+        // Select the "Men's Wear" link
+        const mensWearLink = $(".main3");
+
+        // Add a click event handler to the "Men's Wear" link
+        mensWearLink.click(function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            const barDiv = $("#down"); // Get the "bar" div
+            const scrollOffset = -53.5; // Scroll offset value in pixels
+
+            // Scroll to the "bar" div with a smooth animation
+            $("html, body").animate({
+                scrollTop: barDiv.offset().top - scrollOffset
+            }, 1000); // 1000 milliseconds for animation duration
+        });
+    });
+
+
+    $(document).ready(function () {
+        // Select the "Men's Wear" link
+        const mensWearLink = $(".main4");
+
+        // Add a click event handler to the "Men's Wear" link
+        mensWearLink.click(function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            const barDiv = $("#down"); // Get the "bar" div
+            const scrollOffset = -990; // Scroll offset value in pixels
+
+            // Scroll to the "bar" div with a smooth animation
+            $("html, body").animate({
+                scrollTop: barDiv.offset().top - scrollOffset
+            }, 1000); // 1000 milliseconds for animation duration
+        });
+    });
+
+    $(document).ready(function () {
+        // Select the "Men's Wear" link
+        const mensWearLink = $(".main6");
+
+        // Add a click event handler to the "Men's Wear" link
+        mensWearLink.click(function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            const barDiv = $("#down"); // Get the "bar" div
+            const scrollOffset = -2000; // Scroll offset value in pixels
+
+            // Scroll to the "bar" div with a smooth animation
+            $("html, body").animate({
+                scrollTop: barDiv.offset().top - scrollOffset
+            }, 1000); // 1000 milliseconds for animation duration
+        });
+    });
+
+
+
+
+</script>
+
+</html>

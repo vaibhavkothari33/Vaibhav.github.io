@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <style>
+        body {
+            margin: 0%;
+            
+        }
+
+        .box {
+            margin: 22px;
+            float: left;
+            text-align: center;
+            font-size: 100px;
+
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            height: 220px;
+            width: 400px;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+            height: 220px;
+            width: 400px;
+        }
+
+        .pin {
+            height: 100px;
+            width: auto;
+            font-size: 75px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Click! the Buttons</h1>
+    <h2> RED ---> Will show all the red boxes </h2>
+    <h2> Black ---> Will show all the Black boxes </h2>
+    <h2> ALL ---> Will show all the boxes </h2>
+    <button class="pin" id="red">Red</button>
+    <button class="pin" id="black">Black</button>
+    <button class="pin" id="all">ALL</button>
+    <br>
+    <div class="red box">Red</div>
+    <div class="black box">Black</div>
+    <div class="red box">Red</div>
+    <div class="black box">Black</div>
+    <div class="red box">Red</div>
+    <div class="black box">Black</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#all").click(function () {
+            $(".box").show("fast");
+        })
+
+
+        $("#red").click(function () {
+            $(".black").hide("fast");
+            $(".red").show("fast");
+        })
+
+        $("#black").click(function () {
+            $(".red").hide("fast");
+            $(".black").show("fast");
+        })
+
+    })
+</script>
+
+</html>

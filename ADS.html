@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up close </title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    
+</script>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .box {
+            background-color: red;
+            color: white;
+            height: 105px;
+            width: 300px;
+            font-size: 90px;
+            text-align: center;
+            cursor: pointer;
+            padding: auto;
+            position: absolute;
+            top: 200px;
+            left: 38%;
+
+
+        }
+
+        .main {
+            height: 597px;
+            width: 98.5%;
+            background-color: lightgreen;
+            border: 10px black solid;
+
+
+        }
+
+        .close {
+            height: 40px;
+            width: 80px;
+            font-size: 25px;
+            float: right;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 90px;
+        }
+        .box1{
+            background-color: red;
+            color: white;
+            height: 450px;
+            width: 550px;
+            position: absolute;
+            top: 100px;
+            left: 30%;
+            word-spacing: 20px;
+        }
+        .vaibhav{
+            display: hide;
+         }
+    </style>
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <button class="box" id="show">Offers</button>
+
+    <!--<button id="hide">HIDE</button>
+    <div class="main" id="vai">
+        <h1>Hello world!</h1>
+    </div>-->
+    <div class="vaibhav">
+    <div class="main">
+        <button id="hide" class="close"> Close </button>
+
+        <div class="box1">
+        <h1>Sale</h1>
+        <h1>50% off on Everthing </h1>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {     
+
+        $("#show").click(function () {
+            $(".main").show("fast");
+            $(".box").hide("fast");
+
+
+        })
+
+        $("#hide").click(function () {
+            $(".main").hide("fast");
+            $(".box").show("fast");
+
+        })
+
+
+    })
+</script>
+
+</html>

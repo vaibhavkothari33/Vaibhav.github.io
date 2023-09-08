@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+
+
+
+    <style>
+        body {
+            margin: 0px;
+            height: 2900px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+
+        #down {
+            margin-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        .main {
+            background-color: black;
+            height: 615px;
+            width: 100%;
+        }
+
+        .box1 {
+            padding-top: 10px;
+            margin-left: 25px;
+            height: 60px;
+            width: 300px;
+            font-size: 45px;
+            color: white;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .nav2 {
+            height: 60px;
+            width: 900px;
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+
+        .nav {
+            background-color: transparent;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            float: left;
+            font-size: 35px;
+            color: white;
+
+        }
+
+        .nav1 {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .name1 {
+            background-color: transparent;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            height: 250px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .name2 {
+            background-color: transparent;
+            position: absolute;
+            top: 250px;
+            left: 80px;
+            height: 250px;
+            width: 750px;
+            font-size: 80px;
+            color: white;
+        }
+
+        .name3 {
+            background-color: transparent;
+            position: absolute;
+            top: 330px;
+            left: 300px;
+            height: 250px;
+            width: 750px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .image {
+            position: absolute;
+            top: 140px;
+            right: 140px;
+            height: 400px;
+            width: 400px;
+        }
+
+        .work {
+            background-color: #1a1a1a;
+            height: 615px;
+            width: 100%;
+
+        }
+
+        .text1 {
+            height: 75px;
+            width: 350px;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 630px;
+            left: 42%;
+
+        }
+
+        .bcci {
+            height: 320px;
+            width: 320px;
+            background-color: rgb(34, 32, 35);
+            color: white;
+            font-size: 37px;
+            text-align: center;
+
+
+        }
+
+        .work1 {
+            position: absolute;
+            top: 800px;
+            left: 65px;
+        }
+
+        .work2 {
+            position: absolute;
+            top: 800px;
+            left: 525px;
+        }
+
+        .work3 {
+            position: absolute;
+            top: 800px;
+            right: 65px;
+        }
+
+        ul {
+            padding-top: 20px;
+            font-size: 25px;
+
+        }
+
+        .display {
+
+            background-color: #1b0909;
+            height: 715px;
+            width: 100%;
+
+
+        }
+
+        .text2 {
+            height: 75px;
+            width: 350px;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 1240px;
+            left: 45%;
+
+        }
+
+        .projects {
+            height: 100px;
+            width: 100%;
+            font-size: 45px;
+            color: white;
+            position: absolute;
+            top: 1200px;
+            left: 45px;
+            word-spacing: 100px;
+        }
+
+        .project {
+            height: 50px;
+            width: 300px;
+            float: left;
+            /*background-color: rgb(34, 32, 35);*/
+            color: white;
+            font-size: 45px;
+            text-align: center;
+
+
+        }
+
+        .pro1 {
+            position: absolute;
+            top: 1350px;
+            left: 35px;
+        }
+
+        .pro2 {
+            position: absolute;
+            top: 1350px;
+            left: 525px;
+        }
+
+        .pro3 {
+            position: absolute;
+            top: 1350px;
+            right: 35px;
+        }
+
+        .proj1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            background-color: #1b0909a9;
+            height: 250px;
+            width: 450px;
+            margin: 10px;
+        }
+
+        /******************************************************/
+        /******************************************************/
+        /******************************************************/
+        @media (max-width: 480px) {
+            .main {
+                background-color: black;
+                height: 350px;
+                width: 850px;
+            }
+
+            .box1 {
+
+                height: 20px;
+                width: 50px;
+                font-size: 30px;
+
+            }
+
+            .nav2 {
+                height: 30px;
+                width: 450px;
+                position: absolute;
+                right: -250px;
+                top: 60px;
+
+            }
+
+            .nav {
+                background-color: transparent;
+                height: 25px;
+                width: 90px;
+                text-align: center;
+                float: left;
+                font-size: 15px;
+                color: white;
+
+
+            }
+
+            .image {
+                position: absolute;
+                top: 80px;
+                right: -350px;
+                height: 200px;
+                width: 200px;
+            }
+
+            .name1 {
+                background-color: transparent;
+                position: absolute;
+                top: 100px;
+                left: 30px;
+                height: 250px;
+                width: 750px;
+                font-size: 40px;
+                color: white;
+            }
+
+            .name2 {
+                background-color: transparent;
+                position: absolute;
+                top: 150px;
+                left: 60px;
+                height: 250px;
+                width: 750px;
+                font-size: 50px;
+                color: white;
+            }
+
+            .name3 {
+                background-color: transparent;
+                position: absolute;
+                top: 210px;
+                left: 100px;
+                height: 500px;
+                width: 750px;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*----------------------------------------------*/
+            .work {
+                background-color: #1a1a1a;
+                height: 770px;
+                width: 850px;
+                position: absolute;
+                top: 950px;
+
+            }
+
+            .text1 {
+                height: 75px;
+                width: 350px;
+                font-size: 30px;
+                color: white;
+                position: absolute;
+                top: 370px;
+                left: 55%;
+
+            }
+
+            .bcci {
+                height: 280px;
+                width: 280px;
+                background-color: rgb(34, 32, 35);
+                color: white;
+                font-size: 30px;
+                text-align: center;
+
+
+            }
+
+            .work1 {
+                position: absolute;
+                top: 450px;
+                left: 25px;
+            }
+
+            .work2 {
+                position: absolute;
+                top: 450px;
+                left: 450px;
+            }
+
+            .work3 {
+                position: absolute;
+                top: 800px;
+                left: 275px;
+            }
+
+            /*-----------------------*/
+            .display {
+
+                background-color: #1b0909;
+                height: 615px;
+                width: 850px;
+
+
+            }
+
+        }
+
+        .center {
+            height: 450px;
+            width: 100%;
+            background-color: #1a1a1a;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 2495px;
+
+        }
+
+        .about_me {
+            height: 550px;
+            width: 100%;
+            background-color: #1a1a1a;
+            color: white;
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+        .pro {
+            height: 200px;
+            width: 400px;
+            border: white solid 10px;
+        }
+
+        .pro1 {
+            position: absolute;
+            top: 1350px;
+            left: 20px;
+        }
+
+        .pro2 {
+            position: absolute;
+            top: 1350px;
+            left: 470px;
+        }
+
+        .pro3 {
+            position: absolute;
+            top: 1350px;
+            left: 920px;
+            border: black solid 10px;
+        }
+
+        .pro4 {
+            position: absolute;
+            top: 1670px;
+            left: 920px;
+        }
+
+        .pro5 {
+            position: absolute;
+            top: 1670px;
+            left: 470px;
+            border: black solid 10px;
+        }
+
+        .pro6 {
+            position: absolute;
+            top: 1670px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="box1">
+            PORT<span class="yellow">FOLIO</span>
+        </div>
+
+        <div class="nav2">
+            <!-- <a href="">
+                <div class="nav nav1">Home</div>
+            </a> -->
+
+            <a href="#down">
+                <div class="nav">Experience</div>
+            </a>
+            <a href="#down1">
+                <div class="nav ">&nbsp;&nbsp;About-Me</div>
+            </a>
+
+            <a href="#down3">
+                <div class="nav">Contact</div>
+            </a>
+            <!-- <a href="loginform.html">
+                <div class="nav">Login</div>
+            </a> -->
+        </div>
+        <div class="name1"><span class="red">My</span> name is </div>
+        <div class="name2">Vaibhav Kothari</div>
+        <div class="name3">and i am a <span class="red">student</span>
+        </div>
+
+        <div class="image">
+            <img src="WhatsApp Image 2023-07-20 at 5.21.33 PM.jpeg" alt="" height="100%" width="100%">
+        </div>
+
+
+    </div>
+
+    <div class="work">
+        <div id="down"></div>
+        <div class="text1">Work Experience</div>
+        <br>
+        <div class="work1 bcci ">Video Editing
+            <br>
+            <ul>
+                <li>50+ Video Edited</li>
+                <br>
+                <li>Video Editing</li>
+                <br>
+                <li>Reel Editing</li>
+
+            </ul>
+        </div>
+        <div class="work2 bcci">Languages known
+            <br>
+            <ul>
+
+                <li>C/C++</li>
+                <br>
+                <li>HTML 5</li>
+                <br>
+                <li>CSS 3</li>
+                <br>
+                <li>Java Script</li>
+                <br>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="work3 bcci">Python
+            <br>
+            <ul>
+
+                <li>Pandas</li>
+                <br>
+                <li>DataFrame</li>
+                <br>
+                <li>Matplotlib</li>
+                <br>
+                <li>CSV </li>
+            </ul>
+        </div>
+    </div>
+    <div class="display">
+        <div class="text2">Projects</div>
+        <!-- <div class="project pro1 ">Video Editing</div> -->
+        <div class="pro pro1"> <a href="E-commerce.html" target="_blank"><img src="pro1.png" height="200"
+                    width="400"></a></div>
+
+        <div class="pro pro2"> <a href="Animation.html" target="_blank"><img src="pro2.png" height="200"
+                    width="400"></a></div>
+
+        <div class="pro pro3"> <a href="Javascript.html" target="_blank"><img src="pro3.png" height="200"
+                    width="400"></a></div>
+
+        <div class="pro pro4"> <a href="GTA.html" target="_blank"><img src="pro4.png" height="200" width="400"></a>
+        </div>
+
+        <div class="pro pro5"> <a href="ADS.html" target="_blank"><img src="pro6.png" height="200" width="400"></a>
+        </div>
+
+        <div class="pro pro6"> <a href="Lost_and_Found1.html" target="_blank"><img src="pro5.png" height="200" width="400"></a>
+        </div>
+
+
+
+
+    </div>
+    <div class="about_me">
+        <pre>
+        <h1 align="center"> <b> About Me</b></h1>
+                Greetings! I'm Vaibhav Kothari, a first-year Computer Science and Engineering (CSE) student with a penchant for the digital world
+                 and a heart that beats for basketball.
+
+           <b> Tech Enthusiast:</b>
+                I'm passionate about coding and technology. Python, Java, SQL, and web design are my creative outlets. I find joy in crafting
+                 practical solutions and web experiences that leave a mark.
+
+            <b>Basketball Enthusiast:</b>
+                When I'm not in front of a computer, you'll likely spot me on the basketball court. The game isn't just about hoops; it's about
+                 strategy, teamwork, and a pure adrenaline rush.
+
+            <b>Why CSE?</b>
+                The CSE world captivates me because it marries creativity with logic. I'm thrilled to harness my coding skills to tackle
+                 real-world challenges and innovate.
+
+<b>            Beyond the Pixels</b>:
+                Life isn't all about coding or basketball; it's also about embracing diverse experiences. Whether it's exploring new places, diving 
+                into a gripping book, or tinkering with tech gadgets, I'm always up for an adventure.
+
+   <b>         Connect with Me:</b>
+                If you share my enthusiasm for tech, basketball, or simply a good conversation, reach out. I'm eager to connect with like-minded 
+                individuals, explore fresh perspectives, and perhaps even collaborate on exciting projects.
+
+
+
+                Thanks for taking a moment to get to know me better. Here's to new connections and endless possibilities!
+
+
+        </pre>
+    </div>
+
+    <div id="down1"></div>
+    <div class="center">
+        <h1>Contact</h1>
+        <a href="" target="_blank"><img src="linkedin_logo.png" height="50px" width="50px" alt="">
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="" target="_blank"><img src="instagran_icon.png" height="50px" width="50px" alt="">
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/vaibhavkothari33/Projects" target="_blank"><img src="github.png" height="50px"
+                width="50px" alt=""> </a>
+
+        <h2>Mobile :- 9680660153</h2>
+        <br><br>
+        <h2>E-Mail :-contact.vaibhavkothari@gmail.com</h2>
+    </div>
+
+
+    <!-- Add this script tag after your existing code -->
+    <script>
+        $(document).ready(function () {
+            // Select the "Service" link
+            const serviceLink = $(".nav2 .nav:nth-child(2)");
+
+            // Add a click event handler to the "Service" link
+            serviceLink.click(function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                const serviceSection = $("#service"); // Get the service section
+                const scrollOffset = 800; // Scroll offset value in pixels
+
+                // Scroll to the service section with a smooth animation
+                $("html, body").animate({
+                    scrollTop: serviceSection.offset().top - scrollOffset
+                }, 1000); // 1000 milliseconds for animation duration
+            });
+        });
+
+        $(document).ready(function () {
+            // Select the "Service" link
+            const serviceLink = $(".nav2 .nav:nth-child(2)");
+
+            // Add a click event handler to the "Service" link
+            serviceLink.click(function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                const serviceSection = $("#contact"); // Get the service section
+                const scrollOffset = 1200; // Scroll offset value in pixels
+
+                // Scroll to the service section with a smooth animation
+                $("html, body").animate({
+                    scrollTop: serviceSection.offset().top - scrollOffset
+                }, 1000); // 1000 milliseconds for animation duration
+            });
+        });
+
+        $(document).ready(function () {
+            // Select the "Service" link
+            const serviceLink = $(".nav2 .nav:nth-child(2)");
+
+            // Add a click event handler to the "Service" link
+            serviceLink.click(function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                const serviceSection = $("#about_me"); // Get the service section
+                const scrollOffset = 1200; // Scroll offset value in pixels
+
+                // Scroll to the service section with a smooth animation
+                $("html, body").animate({
+                    scrollTop: serviceSection.offset().top - scrollOffset
+                }, 1000); // 1000 milliseconds for animation duration
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
