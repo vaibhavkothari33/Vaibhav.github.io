@@ -274,7 +274,7 @@
                 float: left;
                 font-size: 15px;
                 color: white;
-                
+
 
             }
 
@@ -391,7 +391,8 @@
             top: 2495px;
 
         }
-        .about_me{
+
+        .about_me {
             height: 550px;
             width: 100%;
             background-color: #1a1a1a;
@@ -399,6 +400,50 @@
             position: absolute;
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
+        }
+
+        .pro {
+            height: 200px;
+            width: 400px;
+            border: white solid 10px;
+        }
+
+        .pro1 {
+            position: absolute;
+            top: 1350px;
+            left: 20px;
+        }
+
+        .pro2 {
+            position: absolute;
+            top: 1350px;
+            left: 470px;
+        }
+
+        .pro3 {
+            position: absolute;
+            top: 1350px;
+            left: 920px;
+            border: black solid 10px;
+        }
+
+        .pro4 {
+            position: absolute;
+            top: 1670px;
+            left: 920px;
+        }
+
+        .pro5 {
+            position: absolute;
+            top: 1670px;
+            left: 470px;
+            border: black solid 10px;
+        }
+
+        .pro6 {
+            position: absolute;
+            top: 1670px;
+            left: 20px;
         }
     </style>
 </head>
@@ -415,15 +460,15 @@
             <!-- <a href="">
                 <div class="nav nav1">Home</div>
             </a> -->
-          
+
             <a href="#down">
                 <div class="nav">Experience</div>
             </a>
-            <a href="#down3">
+            <a href="#down1">
                 <div class="nav ">&nbsp;&nbsp;About-Me</div>
             </a>
-            
-            <a href="#down1">
+
+            <a href="#down3">
                 <div class="nav">Contact</div>
             </a>
             <!-- <a href="loginform.html">
@@ -454,7 +499,7 @@
                 <li>Video Editing</li>
                 <br>
                 <li>Reel Editing</li>
-               
+
             </ul>
         </div>
         <div class="work2 bcci">Languages known
@@ -469,10 +514,10 @@
                 <br>
                 <li>Java Script</li>
                 <br>
-             <li>SQL</li>
+                <li>SQL</li>
             </ul>
         </div>
-        <div class="work3 bcci">Python 
+        <div class="work3 bcci">Python
             <br>
             <ul>
 
@@ -489,12 +534,29 @@
     <div class="display">
         <div class="text2">Projects</div>
         <!-- <div class="project pro1 ">Video Editing</div> -->
-        
+        <div class="pro pro1"> <a href="E-commerce.html" target="_blank"><img src="pro1.png" height="200"
+                    width="400"></a></div>
 
-    
+        <div class="pro pro2"> <a href="Animation.html" target="_blank"><img src="pro2.png" height="200"
+                    width="400"></a></div>
+
+        <div class="pro pro3"> <a href="Javascript.html" target="_blank"><img src="pro3.png" height="200"
+                    width="400"></a></div>
+
+        <div class="pro pro4"> <a href="GTA.html" target="_blank"><img src="pro4.png" height="200" width="400"></a>
+        </div>
+
+        <div class="pro pro5"> <a href="ADS.html" target="_blank"><img src="pro6.png" height="200" width="400"></a>
+        </div>
+
+        <div class="pro pro6"> <a href="Lost_and_Found1.html" target="_blank"><img src="pro5.png" height="200" width="400"></a>
+        </div>
+
+
+
 
     </div>
-        <div class="about_me">
+    <div class="about_me">
         <pre>
         <h1 align="center"> <b> About Me</b></h1>
                 Greetings! I'm Vaibhav Kothari, a first-year Computer Science and Engineering (CSE) student with a penchant for the digital world
@@ -527,14 +589,17 @@
 
         </pre>
     </div>
-    
+
     <div id="down1"></div>
     <div class="center">
         <h1>Contact</h1>
-        <a href="" target="_blank"><img src="linkedin_logo.png" height="50px" width="50px" alt=""> </a>&nbsp;&nbsp;&nbsp;
-        <a href="" target="_blank"><img src="instagran_icon.png" height="50px" width="50px" alt=""> </a>&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/vaibhavkothari33/Projects" target="_blank"><img src="github.png" height="50px" width="50px" alt=""> </a>
-         
+        <a href="" target="_blank"><img src="linkedin_logo.png" height="50px" width="50px" alt="">
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="" target="_blank"><img src="instagran_icon.png" height="50px" width="50px" alt="">
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/vaibhavkothari33/Projects" target="_blank"><img src="github.png" height="50px"
+                width="50px" alt=""> </a>
+
         <h2>Mobile :- 9680660153</h2>
         <br><br>
         <h2>E-Mail :-contact.vaibhavkothari@gmail.com</h2>
@@ -570,6 +635,24 @@
                 event.preventDefault(); // Prevent the default link behavior
 
                 const serviceSection = $("#contact"); // Get the service section
+                const scrollOffset = 1200; // Scroll offset value in pixels
+
+                // Scroll to the service section with a smooth animation
+                $("html, body").animate({
+                    scrollTop: serviceSection.offset().top - scrollOffset
+                }, 1000); // 1000 milliseconds for animation duration
+            });
+        });
+
+        $(document).ready(function () {
+            // Select the "Service" link
+            const serviceLink = $(".nav2 .nav:nth-child(2)");
+
+            // Add a click event handler to the "Service" link
+            serviceLink.click(function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                const serviceSection = $("#about_me"); // Get the service section
                 const scrollOffset = 1200; // Scroll offset value in pixels
 
                 // Scroll to the service section with a smooth animation
